@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test 1</title>
+    <style>
+        body{
+            background-image: url(data:image/jpeg;base64,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);
+            background-size: cover;
+        }
+        form{
+            background-color: black;
+            color: antiquewhite;
+            width: fit-content;
+            opacity: 0.8;  
+        }
+        tr{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th style="text-align: center;" colspan="4">Application</th>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;">Please fill out the appication form carefully</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Full name</label>
+                </td>
+                <td colspan="3">
+                    <input type="text"  id="name"></td>           
+            </tr>
+            <tr>
+                <td>
+                    <label for="father name">Father name</label>
+                </td>
+                <td colspan="2">
+                    <input type="text" id="father name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Mother name">Mother name</label>
+    
+                </td>
+                <td colspan="3">
+                    <input type="text" name="" id="Mother name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date">Date of birth</label>
+                </td>
+                <td>
+                    <select name="day" id="date">
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10</option>
+                        <option value="">11</option>
+                        <option value="">12</option>
+                        <option value="">13</option>
+                        <option value="">14</option>
+                        <option value="">15</option>
+                        <option value="">16</option>
+                        <option value="">17</option>
+                        <option value="">18</option>
+                        <option value="">19</option>
+                        <option value="">20</option>
+                        <option value="">21</option>
+                        <option value="">22</option>
+                        <option value="">23</option>
+                        <option value="">24</option>
+                        <option value="">25</option>
+                        <option value="">26</option>
+                        <option value="">27</option>
+                        <option value="">28</option>
+                        <option value="">29</option>
+                        <option value="">30</option>
+                        <option value="">31</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="month" id="date">
+                        <option value="month">January</option>
+                        <option value="month">February</option>
+                        <option value="month">March</option>
+                        <option value="month">April</option>
+                        <option value="month">May</option>
+                        <option value="month">june</option>
+                        <option value="month">July</option>
+                        <option value="month">August</option>
+                        <option value="month">Septmber</option>
+                        <option value="month">October</option>
+                        <option value="month">November</option>
+                        <option value="month">December</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="number" name="year" id="date" placeholder="Enter year">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>day</td>
+                <td>month</td>
+                <td>year</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gender">Gender</label>
+
+                </td>
+                <td>
+                    <select name="" id="gender">
+                        <option value="gender">Male</option>
+                        <option value="">Female</option>
+                        <option value="">Others</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email Address</label>
+                </td>
+                <td>
+                    <input type="email" name="" id="Email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Mobile">Mobile Number</label>
+                </td>
+                <td>
+                    <input type="number" name="" id="Mobile">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="address">Address</label>
+
+                </td>
+                <td>
+                    <input type="text" name="" id="address">
+                </td>
+                <td>
+                    <input type="text" name="" id="address">                  
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Street Address</td>
+                <td>Street line 2</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="text" name="" id="Address">
+                </td>
+                <td>
+                    <input type="text" name="" id="Address">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>city</td>
+                <td>State/Province</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="text" name="" id="Address">
+                </td>
+                <td>
+                    <input type="text" name="" id="Address">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Postal/Zipcode</td>
+                <td>Country</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Cource">Cource name</label>
+                </td>
+                <td>
+                    <input type="text" name="" id="Cource">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Education">Type of Education</label>
+                </td>
+                <td>
+                    <select name="" id="Education">
+                        <option value="">MCA</option>
+                        <option value="">BSc</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Cource description</td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea name="courc" id="" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;">
+                    <button type="submit" style="background-color: aqua;color: beige;">Apply Now</button>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+    
+    
+</body>
+</html>
+
